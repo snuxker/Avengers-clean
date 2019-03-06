@@ -6,4 +6,4 @@ and <a href="https://insert-koin.io/">Koin</a> to externalize the creation of de
 <p>
 This app consumes data from <a href="https://jsonbin.io/">jsonbin</a>.
 <h2>Screenshot</h2>
-![screenshots](https://firebasestorage.googleapis.com/v0/b/avengers-efe08.appspot.com/o/S__14573586.jpg?alt=media&token=3a352f97-bf06-42d0-8e6c-17bcb377ddab)
+![s__14573586](https://user-images.githubusercontent.com/3166803/53869625-26309400-402b-11e9-87bb-b57f69700334.jpg)
