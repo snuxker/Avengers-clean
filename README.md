@@ -1,5 +1,5 @@
 # Avengers-clean
-Written in <a href="https://kotlinlang.org/">Kotlin</a>. 
+Written in <a href="https://kotlinlang.org/">Kotlin</a> and stand on the principles of <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">Clean Architecture.</a>
 It uses Architecture Components like <a href="https://developer.android.com/topic/libraries/architecture/viewmodel">ViewModel</a>,
 <a href="https://developer.android.com/topic/libraries/architecture/livedata">LiveData</a>
 and <a href="https://insert-koin.io/">Koin</a> to externalize the creation of dependencies from the classes that use them. 
