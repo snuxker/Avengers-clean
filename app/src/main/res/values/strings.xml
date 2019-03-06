@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Avengers</string>
+    <string name="no_heroes_error">No heroes found, let\'s be a hero :)</string>
+    <string name="common_loading_error">Oh noo, something went wrong :(</string>
+</resources>

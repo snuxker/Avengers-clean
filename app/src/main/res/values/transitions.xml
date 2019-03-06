@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transition_hero_image">transition_hero_image</string>
+    <string name="transition_hero_name">transition_hero_name</string>
+</resources>
