@@ -60,7 +60,6 @@ dependencies {
     kapt "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion"
     implementation "android.arch.persistence.room:runtime:$roomVersion"
     kapt "android.arch.persistence.room:compiler:$roomVersion"
-    implementation 'android.arch.lifecycle:reactivestreams:1.1.1'
 
     // Dependencies for local unit tests
     testImplementation "junit:junit:$junitVersion"
