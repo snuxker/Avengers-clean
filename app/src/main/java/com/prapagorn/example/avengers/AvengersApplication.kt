@@ -14,7 +14,7 @@ class AvengersApplication : Application() {
                 dataSourceModule,
                 repositoryModule,
                 useCaseModule,
-                viewModelModule,
-                utilityModule))
+                viewModelModule
+            ))
     }
 }

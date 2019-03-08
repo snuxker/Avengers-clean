@@ -3,13 +3,13 @@ package com.prapagorn.example.avengers.presenter.heroes
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.prapagorn.example.avengers.domain.HeroesUseCaseImpl
+import com.prapagorn.example.avengers.domain.HeroesUseCase
 import com.prapagorn.example.avengers.presenter.entity.Hero
 import com.prapagorn.example.avengers.util.Event
-import com.prapagorn.example.avengers.util.SchedulersFacade
+import io.reactivex.Scheduler
 import io.reactivex.disposables.CompositeDisposable
 
-class HeroesViewModel(private val useCase: HeroesUseCaseImpl, private val schedulers: SchedulersFacade) : ViewModel() {
+class HeroesViewModel(private val useCase: HeroesUseCase, private val uiSchedulers: Scheduler) : ViewModel() {
 
     private val _showLoading = MutableLiveData<Boolean>()
     val showLoading: LiveData<Boolean>
@@ -43,9 +43,13 @@ class HeroesViewModel(private val useCase: HeroesUseCaseImpl, private val schedu
 
     private fun getHeroes() {
         disposeBag.add(useCase.getHeroes()
-            .observeOn(schedulers.ui())
+            .observeOn(uiSchedulers)
             .doOnSubscribe {
                 _showLoading.value = true
+            }
+            .doOnError {
+                _showLoading.value = false
+                listOf<Hero>()
             }
             .subscribe({
                 _showLoading.value = false
