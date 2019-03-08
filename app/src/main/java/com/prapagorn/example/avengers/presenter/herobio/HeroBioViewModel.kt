@@ -36,6 +36,7 @@ class HeroBioViewModel(private val heroesUseCase: HeroesUseCase, private val uiS
                     _showLoading.value = false
                     _heroBio.value = it
                 },{
+                    _showLoading.value = false
                     _showLoadingError.value = Event(Unit)
                 }))
         }else {

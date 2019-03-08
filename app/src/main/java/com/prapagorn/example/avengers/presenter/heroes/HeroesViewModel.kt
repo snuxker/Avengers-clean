@@ -48,13 +48,17 @@ class HeroesViewModel(private val useCase: HeroesUseCase, private val uiSchedule
                 _showLoading.value = true
             }
             .doOnError {
-                _showLoading.value = false
                 listOf<Hero>()
             }
             .subscribe({
                 _showLoading.value = false
-                _heroes.value = it
+                if (it.isNotEmpty()){
+                    _heroes.value = it
+                }else {
+                    _showNoHeroes.value = true
+                }
             }, {
+                _showLoading.value = false
                 _showLoadingError.value = Event(Unit)
             })
         )

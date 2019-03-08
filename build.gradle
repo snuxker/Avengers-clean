@@ -55,4 +55,5 @@ ext {
     junitVersion = '4.12'
     mockitoVersion = '2.8.9'
     dexMakerVersion = '2.12.1'
+    androidTestingVersion = '1.1.1'
 }
