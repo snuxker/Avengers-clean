@@ -3,6 +3,8 @@ Written in <a href="https://kotlinlang.org/">Kotlin</a> and stand on the princip
 It uses Architecture Components like <a href="https://developer.android.com/topic/libraries/architecture/viewmodel">ViewModel</a>,
 <a href="https://developer.android.com/topic/libraries/architecture/livedata">LiveData</a>
 and <a href="https://insert-koin.io/">Koin</a> to externalize the creation of dependencies from the classes that use them. 
+Also have a sample unit tests using JUnit and 
+<a href="https://site.mockito.org/">Mockito</a>.
 <p>
 This app consumes data from <a href="https://jsonbin.io/">jsonbin</a>.
 <h2>Screenshot</h2>
